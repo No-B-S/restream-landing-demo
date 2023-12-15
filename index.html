@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multistreaming</title>
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/SuisseIntl-Regular.woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/SuisseIntl-Medium.woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/SuisseIntl-Semibold.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="background-effects">
+      <div id="header-particles" class="particles-header-container"></div>
+      <div class="stars__mask"></div>
+      <div class="sublight-ellipse"></div>
+      <div class="header-text-blur"></div>
+      <div class="light-beam"></div>
+    </div>
+    <div class="page-content">
+      <header></header>
+      <main>
+        <div class="hero-block">
+          <div class="heading-text">
+            <h1>Multistreaming</h1>
+            <h2>Be seen, everywhere</h2>
+            <div class="heading-caption">
+              Live stream on multiple platforms, reach more viewers faster.
+            </div>
+          </div>
+        </div>
+
+        <section class="section-container">
+          <div class="streams">
+            <div class="multistream">
+              <div class="video-gallery">
+                <div class="video-cards">
+                  <div class="video-stack">
+                    <div class="video-stack">
+                      <div class="video-stack">
+                        <div class="video-stack">
+                          <div class="video-stack__video">
+                            <video
+                              loop
+                              muted
+                              autoplay
+                              src="/images/hero-slice.mp4"
+                            ></video>
+                          </div>
+                        </div>
+                        <div class="video-stack__video">
+                          <video
+                            loop
+                            muted
+                            autoplay
+                            src="/images/hero-slice.mp4"
+                          ></video>
+                        </div>
+                      </div>
+                      <div class="video-stack__video">
+                        <video
+                          loop
+                          muted
+                          autoplay
+                          src="/images/hero-slice.mp4"
+                        ></video>
+                      </div>
+                    </div>
+                    <div class="video-stack__video">
+                      <video
+                        loop
+                        muted
+                        autoplay
+                        src="/images/hero-slice.mp4"
+                      ></video>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-video-container">
+                  <video loop muted autoplay src="/images/hero-2.mp4"></video>
+                  <div class="video__tint"></div>
+                </div>
+                <div class="streams__gradient"></div>
+              </div>
+            </div>
+            <div class="platform-selector__blur"></div>
+            <div class="platform-card-hightlight">
+              <div class="platform-selector__radials">
+                <lottie-player
+                  src="animations/ripple.json"
+                  background="transparent"
+                  speed="0.4"
+                  style="width: 100%; height: 100%"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+            </div>
+            <div class="platform-selector">
+              <div class="platform-card">
+                <label
+                  class="stream-platform"
+                  for="checkbox_fb"
+                  stream-platform--enabled
+                >
+                  <div class="stream-platform__icon">
+                    <img
+                      class="stream-platform__icon__disabled"
+                      src="/images/platforms/fb.svg"
+                    />
+                    <img
+                      class="stream-platform__icon__enabled"
+                      src="/images/platforms/fb-color.svg"
+                    />
+                  </div>
+                  <div class="stream-platform__name">Facebook</div>
+                  <div class="toggle">
+                    <input type="checkbox" id="checkbox_fb" checked disabled />
+                    <div class="toggle__slider"></div>
+                  </div>
+                </label>
+                <label class="stream-platform" for="checkbox_tw">
+                  <div class="stream-platform__icon">
+                    <img
+                      class="stream-platform__icon__disabled"
+                      src="/images/platforms/tw.svg"
+                    />
+                    <img
+                      class="stream-platform__icon__enabled"
+                      src="/images/platforms/tw-color.svg"
+                    />
+                  </div>
+                  <div class="stream-platform__name">Twitch</div>
+                  <div class="toggle">
+                    <input type="checkbox" id="checkbox_tw" />
+                    <div class="toggle__slider"></div>
+                  </div>
+                </label>
+
+                <label class="stream-platform" for="checkbox_li">
+                  <div class="stream-platform__icon">
+                    <img
+                      class="stream-platform__icon__disabled"
+                      src="/images/platforms/li.svg"
+                    />
+                    <img
+                      class="stream-platform__icon__enabled"
+                      src="/images/platforms/li-color.svg"
+                    />
+                  </div>
+                  <div class="stream-platform__name">LinkedIn</div>
+                  <div class="toggle">
+                    <input type="checkbox" id="checkbox_li" />
+                    <div class="toggle__slider"></div>
+                  </div>
+                </label>
+                <label class="stream-platform" for="checkbox_tt">
+                  <div class="stream-platform__icon">
+                    <img
+                      class="stream-platform__icon__disabled"
+                      src="/images/platforms/tt.svg"
+                    />
+                    <img
+                      class="stream-platform__icon__enabled"
+                      src="/images/platforms/tt-color.svg"
+                    />
+                  </div>
+                  <div class="stream-platform__name">Tiktok</div>
+                  <div class="toggle">
+                    <input type="checkbox" id="checkbox_tt" />
+                    <div class="toggle__slider"></div>
+                  </div>
+                </label>
+                <label class="stream-platform" for="checkbox_yt">
+                  <div class="stream-platform__icon">
+                    <img
+                      class="stream-platform__icon__disabled"
+                      src="/images/platforms/yt.svg"
+                    />
+                    <img
+                      class="stream-platform__icon__enabled"
+                      src="/images/platforms/yt-color.svg"
+                    />
+                  </div>
+                  <div class="stream-platform__name">YouTube</div>
+                  <div class="toggle">
+                    <input type="checkbox" id="checkbox_yt" />
+                    <div class="toggle__slider"></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="kpi-metrics">
+          <div class="kpi-metric">
+            <div class="caption-text">Destinations</div>
+            <div class="title-text">30+ platforms</div>
+          </div>
+          <div class="kpi-metric">
+            <div class="caption-text">Users</div>
+            <div class="title-text">7 million</div>
+          </div>
+          <div class="kpi-metric">
+            <div class="caption-text">Views captured</div>
+            <div class="title-text">60 billion</div>
+          </div>
+        </div>
+        <section class="section-container section--margin">
+          <div class="section-title">
+            <div class="caption-text">Unfair advantage</div>
+            <div class="title-text">Amplify your story</div>
+            <div class="section-text">
+              Stream to your own social channels, those of friends, or even
+              business partners. Our platform provides a diverse range of
+              combinations.
+            </div>
+          </div>
+          <div class="section-content">
+            <div class="cards-container">
+              <div class="cards-row">
+                <div class="card amplify-card-1">
+                  <div class="card__illustration"></div>
+                  <div class="card__text-container">
+                    <div class="card__title">30+ Social platforms</div>
+                    <div class="card__text">
+                      Utilize all social media platforms, including YouTube,
+                      Facebook, LinkedIn, Twitch, TikTok, and more, to engage
+                      with the followers you've amassed.
+                    </div>
+                  </div>
+                </div>
+                <div class="card amplify-card-2">
+                  <div class="card__illustration"></div>
+                  <div class="card__text-container">
+                    <div class="card__title">30+ Social platforms</div>
+                    <div class="card__text">
+                      Utilize all social media platforms, including YouTube,
+                      Facebook, LinkedIn, Twitch, TikTok, and more, to engage
+                      with the followers you've amassed.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-row">
+                <div class="card amplify-card-3">
+                  <div class="card__illustration"></div>
+                  <div class="card__text-container">
+                    <div class="card__title">
+                      Channels of partners and friends
+                    </div>
+                    <div class="card__text">
+                      Allow your friends and partners to restream your live
+                      broadcasts on their social channels, tapping into their
+                      audiences while ensuring a secure and seamless experience.
+                    </div>
+                  </div>
+                </div>
+                <div class="card amplify-card-4">
+                  <div class="card__illustration"></div>
+                  <div class="card__text-container">
+                    <div class="card__title">
+                      Your website or custom destinations.
+                    </div>
+                    <div class="card__text">
+                      To truly own your content, escape social algorithms, and
+                      land viewers where they can sign up or buy your services.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="amplify-cards-lights"></div>
+          </div>
+        </section>
+
+        <section
+          class="section-container section--margin intergrations-section"
+        >
+          <div class="section-title">
+            <div class="caption-text">Integrations</div>
+            <div class="title-text">Works with top streaming apps</div>
+            <div class="section-text">
+              There is no need to make changes to your existing setup. Most
+              integrations are seamless and simple.
+            </div>
+            <div class="action-wrapper">
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+          <div class="section-content">
+            <div class="intergrations">
+              <div class="intergrations__grid">
+                <div class="intergrations__line"></div>
+                <div class="intergrations__line"></div>
+                <div class="intergrations__line"></div>
+                <div class="intergrations__line"></div>
+              </div>
+              <div class="intergrations__company">
+                <img src="images/logos/obs.svg" />
+              </div>
+              <div class="intergrations__company">
+                <img src="images/logos/c-2.svg" />
+              </div>
+              <div class="intergrations__company">
+                <img src="images/logos/vMix.svg" />
+              </div>
+              <div
+                class="intergrations__company"
+                style="mix-blend-mode: luminosity"
+              >
+                <img src="images/logos/c-3.svg" />
+              </div>
+              <div class="intergrations__company">
+                <img src="images/logos/c-4.svg" />
+              </div>
+              <div class="intergrations__company">
+                <img src="images/logos/restream.svg" />
+                <div id="logo-particles" class="intergrations__particles"></div>
+              </div>
+              <div class="intergrations__company">
+                <img src="images/logos/c-5.svg" />
+              </div>
+              <div class="intergrations__company">
+                <img src="images/logos/c-6.svg" />
+              </div>
+              <div class="intergrations__company">
+                <img src="images/logos/c-7.svg" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-container section--margin">
+          <div class="section-title">
+            <div class="caption-text">Have a control</div>
+            <div class="title-text">Everything at your fingertips</div>
+            <div class="section-text">
+              Stay attuned to your content's pulse – before, during, and after
+              the event. Ensure your stream runs seamlessly every step of the
+              way.
+            </div>
+          </div>
+          <div class="section-content">
+            <div class="cards-container">
+              <div class="cards-row">
+                <div class="card control-card-1">
+                  <div class="card__illustration"></div>
+                  <div class="card__text-container">
+                    <div class="card__title">Cross-platform chat</div>
+                    <div class="card__text">
+                      Read and respond to all chats in one place, and never miss
+                      a comment.
+                    </div>
+                  </div>
+                </div>
+                <div class="card control-card-2">
+                  <div class="card__illustration"></div>
+                  <div class="card__text-container">
+                    <div class="card__title">Engagement Analytics</div>
+                    <div class="card__text">
+                      Know your live views, chats, and peak moments to improve
+                      streaming.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-row cards-row--reverse">
+                <div class="card control-card-3">
+                  <div
+                    class="card__illustration card__illustration--left-align"
+                  ></div>
+                  <div class="card__text-container">
+                    <div class="card__title">Teams</div>
+                    <div class="card__text">
+                      Invite teammates to help you prepare, co-create and
+                      post-produce your content.
+                    </div>
+                  </div>
+                </div>
+                <div class="card control-card-4">
+                  <div class="card__illustration"></div>
+                  <div class="card__text-container">
+                    <div class="card__title">Fall-back protection</div>
+                    <div class="card__text">
+                      Run a backup stream to auto-replace your main one if
+                      something goes wrong.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="control-cards-lights"></div>
+          </div>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script> -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="particles.js"></script>
+    <script src="platforms.js"></script>
+  </body>
+</html>
