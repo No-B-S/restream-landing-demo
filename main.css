@@ -246,6 +246,7 @@ main {
 }
 
 .stars__mask {
+  position: absolute;
   max-width: 1000px;
   height: 600px;
   background: radial-gradient(
