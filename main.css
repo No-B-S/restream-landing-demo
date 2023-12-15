@@ -442,6 +442,7 @@ main {
 }
 
 .platform-selector__radials {
+  opacity: 0.5;
   position: absolute;
   width: 596px;
   height: 596px;
