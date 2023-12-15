@@ -247,14 +247,14 @@ main {
 
 .stars__mask {
   position: absolute;
-  max-width: 1000px;
+  max-width: 1008px;
   height: 600px;
   background: radial-gradient(
     54.75% 54.8% at 50% 44.05%,
     rgba(1, 1, 12, 0) 48.65%,
     #01010c 100%
   );
-  width: 50%;
+  width: 100%;
   left: 50%;
   transform: translateX(-50%);
 }
